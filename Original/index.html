@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="home_style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<script>
+function show_topic() {
+ var x = document.getElementById("demo");
+ var my_name = prompt("Enter your name")
+ x.style.fontSize = "25px";
+ x.style.color = "red";
+ document.getElementById("demo").innerHTML= "My name is" + my_name;
+}
+</script>
+<body>
+  <!-- Site navigation menu -->
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Home.html">Home page</a>
+        <li><a href="musings.html">Musings</a>
+        <li><a href="town.html">My town</a>
+        <li><a href="links.html">Links</a>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- Main content -->
+<h1>Home page</h1>
+
+<p>Home
+
+<p>It lacks images, but at least it has style.
+And it has links, even if they don't go
+anywhere&hellip;
+
+<p id='demo'>There should be more here, but I don't know
+what yet.</p>
+<button onclick="show_topic();">Click this button!</button>
+
+<!-- Sign and date the page, it's only polite! -->
+<address>Made 5 April 2004<br>
+  by myself.</address>
+
+</body>
+</html>
